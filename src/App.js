@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Wclome Docker for React
+          Wclome Docker for React!
         </p>
         <a
           className="App-link"
