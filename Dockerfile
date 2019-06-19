@@ -1,5 +1,5 @@
 # node 版本
-FROM node: 8.16.0jessie-slim
+FROM node: 8.16.0-jessie-slim
 
 # 安装nginx
 RUN apt-get install \
