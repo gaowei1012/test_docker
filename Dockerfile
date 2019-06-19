@@ -9,7 +9,7 @@ RUN apt-get update \
 WORKDIR /app
 
 # 将当前目录拷贝到工作目录
-COPY ./app/
+COPY . /app/
 
 # 声明容器运行时所提供的服务端口
 EXPOSE 80
@@ -20,7 +20,7 @@ EXPOSE 80
 # 删除/app目录
 RUN npm install \
     && npm run build \
-    && cp -r dist/* /var/www/html \
+    && cp -r build/* /var/www/html \
     && rm -rf /app
 
 # 以前台的方式启动 nginx
