@@ -3,7 +3,7 @@ FROM node:8.16.0-jessie
 
 # 安装nginx
 RUN apt-get update \
-    & apt-get install -y nginx
+    && apt-get install -y nginx
 
 # 指定目录
 WORKDIR /app
