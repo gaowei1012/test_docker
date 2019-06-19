@@ -1,19 +1,15 @@
 # node 版本
 FROM node: 8.16.0jessie-slim
 
-
 # 安装nginx
 RUN apt-get install \
     & apt-get install -y nginx
 
-
 # 指定目录
 WORKDIR /app
 
-
 # 将当前目录拷贝到工作目录
 COPY ./app/
-
 
 # 声明容器运行时所提供的服务端口
 EXPOSE 80
